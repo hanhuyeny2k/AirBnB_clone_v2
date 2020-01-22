@@ -22,7 +22,8 @@ def path_hbnb():
 @app.route('/c/<text>')
 def C_is(text):
     """ return C <text> """
-    return 'C {}'.format(text)
+    new_text = text.replace("_", " ")
+    return 'C {}'.format(new_text)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
