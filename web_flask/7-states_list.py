@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-from flask import Flask, render_template
-from models import storage
-from models.state import State
 """
 Start Flask web app, listening on 0.0.0.0, port 5000, display Hello HBNB!
 """
+from flask import Flask, render_template
+from models import storage
+from models.state import State
 
 
 app = Flask(__name__)
