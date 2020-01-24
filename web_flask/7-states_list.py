@@ -18,7 +18,7 @@ def close(self):
 
 
 @app.route('/states_list')
-def HTML_States(states=None):
+def HTML_States():
     """ fetch data from teh storage engine"""
     states = storage.all(State)
     return render_template('7-states_list.html', states=states)
